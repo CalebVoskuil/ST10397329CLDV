@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Process Order";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="ProcessOrder" method="post">
+    <div class="form-group">
+        <label for="orderId">Order ID:</label>
+        <input type="text" name="orderId" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Process Order</button>
+</form>
